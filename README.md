@@ -1,31 +1,77 @@
-# NASA API
+# OMDb Movie Search App
 
-Astronomy Picture of the Day: https://api.nasa.gov/<br />
-Then go to to Generate API Key<br />
-Plug the API key into the environment.ts file in the environments directory<br />
-key: "YOUR API KEY"<br />
-ng serve to run the app
+## Overview
 
-## Development server
+The **OMDb Movie Search App** is an Angular 16+ standalone component project that allows users to search for movies and TV titles using the OMDb API. The app provides a **responsive interface**, displays results in **table and grid layouts**, supports **lightbox viewing**, and persists data in **local storage**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Key Features:**
 
-## Code scaffolding
+- Fetch movies from OMDb API by title and optionally by year.
+- Display results in table or poster grid layouts.
+- Click posters to open a detailed lightbox view.
+- Responsive design for mobile and desktop.
+- Local storage persistence to retain movie data across reloads.
+- Random movie generation if no data exists in local storage.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Demo Screenshot
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Screenshot](link-to-your-screenshot.png)  
+_(Replace with your actual screenshot of the app)_
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
 
-## Running end-to-end tests
+- Angular 16+ (Standalone Components)
+- TypeScript
+- RxJS (BehaviorSubject, Observables)
+- HTML, SCSS/CSS
+- OMDb API
+- Local Storage
+- HttpClient
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Project Structure
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+src/
+├── app/
+│ ├── app.component.ts # Main standalone component
+│ ├── app.component.html # Template
+│ ├── app.component.scss # Styles
+│ ├── interfaces/
+│ │ └── omdb-payload.ts # TypeScript interface for OMDb API response
+│ ├── services/
+│ │ ├── global-features.service.ts
+│ │ └── local-storage.service.ts
+│ └── windowRef.ts # Wrapper for window object
+├── environments/
+│ └── environment.ts # API key configuration
+
+## Installation & Setup
+
+Clone the repository
+
+git clone https://github.com/yourusername/omdb-angular-app.git
+cd omdb-angular-app
+
+Install dependencies
+
+npm install
+
+Add OMDb API key
+
+Open src/environments/environment.ts and set your API key:
+
+export const environment = {
+production: false,
+key: "&apikey=YOUR_OMDB_API_KEY"
+};
+
+Run the app
+
+ng serve
+
+Navigate to http://localhost:4200 in your browser.
