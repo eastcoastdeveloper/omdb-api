@@ -1,4 +1,4 @@
-# OMDb Movie Search App
+# OMDB Movie Search App
 
 ## Overview
 
