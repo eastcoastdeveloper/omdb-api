@@ -15,16 +15,9 @@ The **OMDb Movie Search App** is an Angular 16+ standalone component project tha
 
 ---
 
-## Demo Screenshot
-
-![Screenshot](link-to-your-screenshot.png)  
-_(Replace with your actual screenshot of the app)_
-
----
-
 ## Technologies Used
 
-- Angular 16+ (Standalone Components)
+- Angular 19+ (Standalone Components)
 - TypeScript
 - RxJS (BehaviorSubject, Observables)
 - HTML, SCSS/CSS
