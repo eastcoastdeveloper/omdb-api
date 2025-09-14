@@ -27,22 +27,6 @@ The **OMDb Movie Search App** is an Angular 16+ standalone component project tha
 
 ---
 
-## Project Structure
-
-src/
-├── app/
-│ ├── app.component.ts # Main standalone component
-│ ├── app.component.html # Template
-│ ├── app.component.scss # Styles
-│ ├── interfaces/
-│ │ └── omdb-payload.ts # TypeScript interface for OMDb API response
-│ ├── services/
-│ │ ├── global-features.service.ts
-│ │ └── local-storage.service.ts
-│ └── windowRef.ts # Wrapper for window object
-├── environments/
-│ └── environment.ts # API key configuration
-
 ## Installation & Setup
 
 Clone the repository
